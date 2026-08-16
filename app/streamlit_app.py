@@ -81,7 +81,7 @@ def load_model():
 
     return model
 
-model, checkpoint = load_model()
+model = load_model()
 
 
 # ============================================================
