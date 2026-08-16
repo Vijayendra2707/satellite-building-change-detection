@@ -3,3 +3,4 @@ numpy
 Pillow
 matplotlib
 streamlit
+huggingface_hub
