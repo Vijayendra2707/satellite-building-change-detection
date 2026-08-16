@@ -79,10 +79,10 @@ def load_model():
 
     model.eval()
 
-    return model
+    return model, checkpoint
 
-model = load_model()
 
+model, checkpoint = load_model()
 
 # ============================================================
 # PAGE
