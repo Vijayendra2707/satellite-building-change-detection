@@ -1,0 +1,21 @@
+{
+    "dataset": "LEVIR-CD",
+    "architecture": "Siamese FC-Siam-Diff",
+    "patch_size": 256,
+    "original_image_size": 1024,
+    "loss": "BCE + Dice",
+    "best_epoch": 7,
+    "best_validation_iou": 0.7694215868344808,
+    "inference_threshold": 0.7,
+    "test_iou": 0.7691,
+    "test_f1": 0.8695,
+    "test_precision": 0.8809,
+    "test_recall": 0.8583,
+    "macro_image_iou": 0.6574,
+    "macro_image_f1": 0.7495,
+    "macro_image_precision": 0.7601,
+    "macro_image_recall": 0.7565,
+    "no_change_images": 4,
+    "total_test_images": 128,
+    "augmentation_best_validation_iou": 0.7213
+}

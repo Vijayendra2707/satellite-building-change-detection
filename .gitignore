@@ -1,0 +1,42 @@
+
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+# =========================
+# Jupyter / Colab
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+# Dataset
+# =========================
+
+raw/
+patches/
+data/
+
+# =========================
+# Training checkpoints
+# =========================
+
+checkpoints/last_model.pth
+experiment_2_augmentation/
+
+# =========================
+# Streamlit secrets
+# =========================
+
+.streamlit/secrets.toml
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db
