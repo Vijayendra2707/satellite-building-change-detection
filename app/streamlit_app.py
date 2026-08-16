@@ -10,6 +10,7 @@ import torch
 import matplotlib.pyplot as plt
 
 from PIL import Image
+from huggingface_hub import hf_hub_download
 
 
 # ============================================================
@@ -20,11 +21,6 @@ PROJECT_DIR = Path(__file__).resolve().parent.parent
 
 SRC_DIR = PROJECT_DIR / "src"
 
-CHECKPOINT_PATH = (
-    PROJECT_DIR
-    / "checkpoints"
-    / "best_model.pth"
-)
 
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
@@ -44,6 +40,9 @@ from inference import (
 # CONFIGURATION
 # ============================================================
 
+HF_REPO_ID = "Vijayendra2707/satellite-building-change-detection"
+HF_FILENAME = "best_model.pth"
+
 PATCH_SIZE = 256
 
 THRESHOLD = 0.70
@@ -58,16 +57,19 @@ DEVICE = torch.device(
 # ============================================================
 # LOAD MODEL
 # ============================================================
-
 @st.cache_resource
 def load_model():
 
-    model = SiameseFCSDiff().to(
-        DEVICE
+    model_path = hf_hub_download(
+        repo_id=HF_REPO_ID,
+        filename=HF_FILENAME,
+        repo_type="model"
     )
 
+    model = SiameseFCSDiff().to(DEVICE)
+
     checkpoint = torch.load(
-        CHECKPOINT_PATH,
+        model_path,
         map_location=DEVICE
     )
 
@@ -77,8 +79,7 @@ def load_model():
 
     model.eval()
 
-    return model, checkpoint
-
+    return model
 
 model, checkpoint = load_model()
 
