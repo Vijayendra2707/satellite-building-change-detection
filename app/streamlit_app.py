@@ -40,7 +40,7 @@ from inference import (
 # CONFIGURATION
 # ============================================================
 
-HF_REPO_ID = "Vijayendra2707/satellite-building-change-detection"
+HF_REPO_ID = "VJ2707/satellite-building-change-detection"
 HF_FILENAME = "best_model.pth"
 
 PATCH_SIZE = 256
