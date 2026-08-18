@@ -12,6 +12,48 @@ The application takes a **Before** and **After** satellite image and produces a 
 
 ---
 
+# 📸 Application Screenshots
+
+The deployed Streamlit application provides an interactive interface for performing building change detection on bi-temporal satellite images.
+
+### 1. Application Interface
+
+Upload the **Before** and **After** satellite images and run the change detection pipeline.
+
+![Application Interface](assets/home.png)
+
+---
+
+### 2. Input Satellite Images
+
+The application accepts two satellite images representing the same geographical region at different points in time.
+
+![Input Satellite Images](assets/input_images.png)
+
+---
+
+### 3. Change Probability Map
+
+The model generates a pixel-wise probability map representing the likelihood of building change at each pixel.
+
+![Change Probability Map](assets/probability_map.png)
+
+---
+
+### 4. Predicted Change Mask
+
+The probability map is thresholded at **0.70** to generate the final binary change mask.
+
+![Predicted Change Mask](assets/change_mask.png)
+
+---
+
+### 5. Change Overlay
+
+The detected changes are overlaid on the satellite imagery to make the predictions easier to interpret visually.
+
+![Change Overlay](assets/change_overlay.png)
+
 ## 📌 Overview
 
 Satellite imagery captured at different points in time can be used to identify changes in buildings and urban areas.
