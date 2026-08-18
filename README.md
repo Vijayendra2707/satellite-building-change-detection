@@ -212,7 +212,7 @@ Detected building changes are highlighted directly on the satellite imagery for 
 The model operates on 256 × 256 image patches.
 
 For a full 1024 × 1024 satellite image:
-
+```text
 1024 × 1024 Before Image
             +
 1024 × 1024 After Image
@@ -244,6 +244,7 @@ For a full 1024 × 1024 satellite image:
             ▼
       Binary Change Mask
 
+```
 The inference pipeline can also process individual 256 × 256 patches.
 
 📊 Example Detection
@@ -301,6 +302,7 @@ satellite-building-change-detection/
 └── requirements.txt
 ```
 🛠️ Technologies
+```text
 Python
 PyTorch
 NumPy
@@ -311,7 +313,9 @@ Hugging Face Hub
 Git
 GitHub
 Git LFS
+```
 🎯 Key Technical Concepts
+```text
 Siamese Neural Networks
 FC-Siam-Diff
 Bi-temporal Satellite Image Analysis
@@ -327,6 +331,7 @@ IoU
 F1 Score
 Precision
 Recall
+```
 🔬 Evaluation
 
 The system was evaluated at both patch and full-image levels.
