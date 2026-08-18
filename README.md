@@ -261,6 +261,8 @@ Binary change mask
 Change overlay
 Detection summary
 📁 Project Structure
+
+
 satellite-building-change-detection/
 │
 ├── app/
@@ -295,6 +297,7 @@ satellite-building-change-detection/
 ├── .gitignore
 ├── .gitattributes
 └── README.md
+
 🛠️ Technologies
 Python
 PyTorch
