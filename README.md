@@ -260,9 +260,10 @@ Pixel-wise probability map
 Binary change mask
 Change overlay
 Detection summary
-📁 Project Structure
 
+# 📁 Project Structure
 
+```text
 satellite-building-change-detection/
 │
 ├── app/
@@ -296,8 +297,9 @@ satellite-building-change-detection/
 │
 ├── .gitignore
 ├── .gitattributes
-└── README.md
-
+├── README.md
+└── requirements.txt
+```
 🛠️ Technologies
 Python
 PyTorch
